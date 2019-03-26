@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>exchanges.server</name>
+    </assembly>
+    <members>
+        <member name="M:exchanges.server.Controllers.RatesController.GetAll(exchanges.server.Entities.Models.RatesRequest)">
+            <summary>
+            Получение курсов пар валют доступных для продаваемой валюты
+            </summary>
+            <remarks>
+            </remarks>
+            <returns>Информация о курсах обмена для продаваемой валюты</returns>
+            <response code="200">Курсы обмена найдены</response>
+            <response code="204">Курсы обмена не найдены</response>
+            <response code="500">Произошла ошибка при поиске информации</response>
+        </member>
+        <member name="M:exchanges.server.Controllers.RatesController.Get(exchanges.server.Entities.Models.RatesRequest)">
+            <summary>
+            Получение курса для сторого определенной пары валют
+            </summary>
+            <remarks>
+            </remarks>
+            <returns>Информация о курсе обмена для запрашиваемой пары валют</returns>
+            <response code="200">Курс обмена найден</response>
+            <response code="204">Курс обмена не найден</response>
+            <response code="500">Произошла ошибка при поиске информации</response>
+        </member>
+        <member name="P:exchanges.server.Entities.ExchangeInfo.BaseType">
+            <summary>
+            Продаваемая валюта
+            </summary>
+        </member>
+        <member name="P:exchanges.server.Entities.ExchangeInfo.Published">
+            <summary>
+            Дата и время публикации
+            </summary>
+        </member>
+        <member name="P:exchanges.server.Entities.ExchangeInfo.Rates">
+            <summary>
+            Информация об обмене
+            </summary>
+        </member>
+        <member name="P:exchanges.server.Entities.ExchangeRateInfo.Type">
+            <summary>
+            Покупаемая валюта
+            </summary>
+        </member>
+        <member name="P:exchanges.server.Entities.ExchangeRateInfo.Rate">
+            <summary>
+            Курс обмена
+            </summary>
+        </member>
+        <member name="T:exchanges.server.Entities.Models.RateInfo">
+            <summary>Информация о запрошенном курсе</summary>
+        </member>
+        <member name="P:exchanges.server.Entities.Models.RateInfo.To">
+            <summary>Покупаемая валюта</summary>
+        </member>
+        <member name="P:exchanges.server.Entities.Models.RateInfo.Rate">
+            <summary>Значение курса</summary>
+        </member>
+        <member name="P:exchanges.server.Entities.Models.RateInfo.ExpireAt">
+            <summary>Время истечения курса</summary>
+        </member>
+        <member name="T:exchanges.server.Entities.Models.RatesRequest">
+            <summary>Запрос на получение курсов валют</summary>
+        </member>
+        <member name="P:exchanges.server.Entities.Models.RatesRequest.From">
+            <summary>Отдаваемая валюта</summary>
+        </member>
+        <member name="P:exchanges.server.Entities.Models.RatesRequest.To">
+            <summary>Получаемая валюта</summary>
+        </member>
+        <member name="T:exchanges.server.Entities.Models.RatesResponse">
+            <summary>Ответ на запрос курсов</summary>
+        </member>
+        <member name="P:exchanges.server.Entities.Models.RatesResponse.From">
+            <summary>Продаваемая валюта</summary>
+        </member>
+        <member name="P:exchanges.server.Entities.Models.RatesResponse.Rates">
+            <summary>Данные по запрошенным курсам</summary>
+        </member>
+        <member name="M:exchanges.server.Infrastructure.Repositories.Interfaces.IRedisRepository.GetExchangeInfo(exchanges.server.Entities.ExchangeType,exchanges.server.Entities.ExchangeType)">
+            <summary>
+            Получить информацию о паре курсов валют
+            </summary>
+            <param name="base">Продаваемая валюта</param>
+            <param name="target">Покупаемая валюта</param>
+            <returns>Объект с информацией о паре курсов валют и временем актуальности</returns>
+        </member>
+    </members>
+</doc>

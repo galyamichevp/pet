@@ -1,0 +1,30 @@
+version: '3'
+services:
+  api:
+    image: ratesv1
+    build: 
+      context: ./exchanges.server
+      dockerfile: Dockerfile
+    ports:
+     - "80:80"
+    depends_on:
+        - redis
+        - mongo
+    environment:
+      Redis: "redis:6379"
+      Mongo: "mongodb://mongo:27017/?connectTimeoutMS=2000"
+      ASPNETCORE_ENVIRONMENT: "Docker"
+  redis:
+    container_name: redis
+    image: redis:latest
+    expose:
+      - "6379"
+    volumes:
+      - ./redis:/data
+    command: redis-server --appendonly yes
+    ports:
+      - "6380:6379"
+  mongo:
+    image: "mongo:3.4.7"
+    ports:
+      - "27018:27017"

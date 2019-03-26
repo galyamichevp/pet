@@ -1,0 +1,1 @@
+https://medium.com/@antao.almada/performance-of-value-type-vs-reference-type-enumerators-820ab1acc291

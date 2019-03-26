@@ -1,0 +1,11 @@
+C:\dev\netcore\staff\console\bin\Release\netcoreapp2.2\console.deps.json
+C:\dev\netcore\staff\console\bin\Release\netcoreapp2.2\console.runtimeconfig.json
+C:\dev\netcore\staff\console\bin\Release\netcoreapp2.2\console.runtimeconfig.dev.json
+C:\dev\netcore\staff\console\bin\Release\netcoreapp2.2\console.dll
+C:\dev\netcore\staff\console\bin\Release\netcoreapp2.2\console.pdb
+C:\dev\netcore\staff\console\obj\Release\netcoreapp2.2\console.csprojAssemblyReference.cache
+C:\dev\netcore\staff\console\obj\Release\netcoreapp2.2\console.csproj.CoreCompileInputs.cache
+C:\dev\netcore\staff\console\obj\Release\netcoreapp2.2\console.AssemblyInfoInputs.cache
+C:\dev\netcore\staff\console\obj\Release\netcoreapp2.2\console.AssemblyInfo.cs
+C:\dev\netcore\staff\console\obj\Release\netcoreapp2.2\console.dll
+C:\dev\netcore\staff\console\obj\Release\netcoreapp2.2\console.pdb

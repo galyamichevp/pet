@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>console.Enumerations.Example1.MyEnumerableBenchmark</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.11.4, OS=Windows 10.0.17134.648 (1803/April2018Update/Redstone4)
+Intel Core i5-7440HQ CPU 2.80GHz (Kaby Lake), 1 CPU, 4 logical and 4 physical cores
+Frequency=2742193 Hz, Resolution=364.6716 ns, Timer=TSC
+.NET Core SDK=2.2.105
+  [Host] : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+  Core   : .NET Core 2.2.3 (CoreCLR 4.6.27414.05, CoreFX 4.6.27414.05), 64bit RyuJIT
+</code></pre>
+<pre><code>Job=Core  Runtime=Core  
+</code></pre>
+
+<table>
+<thead><tr><th>         Method</th><th>N</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th> P0</th><th>P25</th><th>P50</th><th>P67</th><th>P80</th><th> P85</th><th> P90</th><th> P95</th><th>P100</th><th>Ratio</th><th>RatioSD</th><th>Rank</th><th>Gen 0/1k Op</th><th>Gen 1/1k Op</th><th>Gen 2/1k Op</th><th>Allocated Memory/Op</th>
+</tr>
+</thead><tbody><tr><td>EmptyClass</td><td>1000</td><td>9.5816 ns</td><td>0.1574 ns</td><td>0.1472 ns</td><td>9.5987 ns</td><td>9.3794 ns</td><td>9.4522 ns</td><td>9.5987 ns</td><td>9.6163 ns</td><td>9.7167 ns</td><td>9.7723 ns</td><td>9.7945 ns</td><td>9.8118 ns</td><td>9.8297 ns</td><td>1.014</td><td>0.04</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr><tr><td>EmptyDisposableStruct</td><td>1000</td><td>9.3415 ns</td><td>0.2637 ns</td><td>0.3335 ns</td><td>9.3470 ns</td><td>8.8969 ns</td><td>9.0811 ns</td><td>9.3470 ns</td><td>9.5148 ns</td><td>9.6012 ns</td><td>9.6130 ns</td><td>9.6318 ns</td><td>9.6465 ns</td><td>10.3412 ns</td><td>1.000</td><td>0.00</td><td>2</td><td>0.0076</td><td>-</td><td>-</td><td>24 B</td>
+</tr><tr><td>EmptyStruct</td><td>1000</td><td>0.0406 ns</td><td>0.0256 ns</td><td>0.0333 ns</td><td>0.0356 ns</td><td>0.0000 ns</td><td>0.0170 ns</td><td>0.0356 ns</td><td>0.0572 ns</td><td>0.0664 ns</td><td>0.0691 ns</td><td>0.0821 ns</td><td>0.1004 ns</td><td>0.1101 ns</td><td>0.004</td><td>0.00</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr><tr><td>EmptyClass</td><td>10000</td><td>9.7331 ns</td><td>0.0646 ns</td><td>0.0573 ns</td><td>9.7470 ns</td><td>9.6131 ns</td><td>9.7017 ns</td><td>9.7470 ns</td><td>9.7616 ns</td><td>9.7755 ns</td><td>9.7860 ns</td><td>9.7954 ns</td><td>9.8003 ns</td><td>9.8016 ns</td><td>0.978</td><td>0.03</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr><tr><td>EmptyDisposableStruct</td><td>10000</td><td>9.5332 ns</td><td>0.2249 ns</td><td>0.4386 ns</td><td>9.4882 ns</td><td>8.9186 ns</td><td>9.1290 ns</td><td>9.4882 ns</td><td>9.7387 ns</td><td>9.9315 ns</td><td>10.0493 ns</td><td>10.2243 ns</td><td>10.3153 ns</td><td>10.3637 ns</td><td>1.000</td><td>0.00</td><td>2</td><td>0.0076</td><td>-</td><td>-</td><td>24 B</td>
+</tr><tr><td>EmptyStruct</td><td>10000</td><td>0.0024 ns</td><td>0.0051 ns</td><td>0.0047 ns</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0000 ns</td><td>0.0040 ns</td><td>0.0058 ns</td><td>0.0100 ns</td><td>0.0130 ns</td><td>0.0138 ns</td><td>0.000</td><td>0.00</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>

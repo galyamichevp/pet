@@ -1,0 +1,16 @@
+C:\dev\netcore\staff\exchanges\exchanges.server\bin\Debug\netcoreapp2.2\nlog.config
+C:\dev\netcore\staff\exchanges\exchanges.server\bin\Debug\netcoreapp2.2\exchanges.server.xml
+C:\dev\netcore\staff\exchanges\exchanges.server\bin\Debug\netcoreapp2.2\exchanges.server.deps.json
+C:\dev\netcore\staff\exchanges\exchanges.server\bin\Debug\netcoreapp2.2\exchanges.server.runtimeconfig.json
+C:\dev\netcore\staff\exchanges\exchanges.server\bin\Debug\netcoreapp2.2\exchanges.server.runtimeconfig.dev.json
+C:\dev\netcore\staff\exchanges\exchanges.server\bin\Debug\netcoreapp2.2\exchanges.server.dll
+C:\dev\netcore\staff\exchanges\exchanges.server\bin\Debug\netcoreapp2.2\exchanges.server.pdb
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.csprojAssemblyReference.cache
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.csproj.CoreCompileInputs.cache
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.RazorAssemblyInfo.cache
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.RazorAssemblyInfo.cs
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.AssemblyInfoInputs.cache
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.AssemblyInfo.cs
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.RazorTargetAssemblyInfo.cache
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.dll
+C:\dev\netcore\staff\exchanges\exchanges.server\obj\Debug\netcoreapp2.2\exchanges.server.pdb
