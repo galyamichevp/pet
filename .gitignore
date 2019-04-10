@@ -5,9 +5,11 @@
 /.vs
 **/bin
 **/obj
+/netcore/console/obj/Debug
 /netcore/monitor/server/.vs
 *.user
 /netcore/multithreading/.vs/threads
 /nodejs/grpc/service_a/node_modules
 /nodejs/grpc/service_b/.vscode
 /nodejs/grpc/service_b/node_modules
+/netcore/multithreading
