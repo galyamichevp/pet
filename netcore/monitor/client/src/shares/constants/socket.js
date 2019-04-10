@@ -1,0 +1,4 @@
+export const GET_SOCKET = 'GET_SOCKET';
+export const RUN_SOCKET = 'RUN_SOCKET';
+export const STOP_SOCKET = 'STOP_SOCKET';
+export const SET_SOCKET_STATUS_MESSAGE = 'SET_SOCKET_STATUS_MESSAGE';
