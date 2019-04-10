@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+**/bin
+**/obj
+/netcore/monitor/server/.vs
+*.user
+/netcore/multithreading/.vs/threads
+/nodejs/grpc/service_a/node_modules
+/nodejs/grpc/service_b/.vscode
+/nodejs/grpc/service_b/node_modules

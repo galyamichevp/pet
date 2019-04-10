@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+
+package SampleData;
+
+service SampleDataService {
+  rpc GetSampleData (Empty) returns (SampleData) {}
+}
+
+message SampleData {
+  int32 id = 1;
+  string name = 2;
+  bool enjoys_coding = 3;
+}
+
+message Empty {}
